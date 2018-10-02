@@ -7,7 +7,7 @@
 
 
 var app = {
-    macAddress: "AA:BB:CC:DD:EE:FF",  // get your mac address from bluetoothSerial.list
+    macAddress: "20:16:06:12:71:12",  // get your mac address from bluetoothSerial.list
     chars: "",
 
 /*
@@ -157,4 +157,3 @@ var user=db.collection("users").doc(uuid).get().then(carregarSensores)
         display.innerHTML = "";
     }
 };      // end of app
-
