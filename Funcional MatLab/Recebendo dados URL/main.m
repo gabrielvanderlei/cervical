@@ -1,4 +1,4 @@
-api = 'http://vanderlei.ga/Projeto-Cervical/';
+api = 'http://vanderlei.ga/cervical/';
 url = [api 'test.json'];
 S = webread(url);
 year = [S.year];
