@@ -1,4 +1,4 @@
-<meta name="viewport" content="width=device-width, user-scalable=no">
+﻿<meta name="viewport" content="width=device-width, user-scalable=no">
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -7,12 +7,12 @@
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyB-puOXLaceDzkGmcg_7CqqkIaFPSitRzU",
-    authDomain: "cervical-1a344.firebaseapp.com",
-    databaseURL: "https://cervical-1a344.firebaseio.com",
-    projectId: "cervical-1a344",
-    storageBucket: "",
-    messagingSenderId: "190589431562"
+    apiKey: "AIzaSyAXzOPclgxfvHCc5wONVQa0N4f8VdpT3Kk",
+    authDomain: "cervical-7f45d.firebaseapp.com",
+    databaseURL: "https://cervical-7f45d.firebaseio.com",
+    projectId: "cervical-7f45d",
+    storageBucket: "cervical-7f45d.appspot.com",
+    messagingSenderId: "347610022979"
   };
   firebase.initializeApp(config);
   // Initialize Cloud Firestore through Firebase
@@ -109,20 +109,20 @@ carregarSensores();
   
 </script>
 <style>
-  .section{display:none;position:fixed;width:100%;height:100%;font-family:Segoe UI; color black;font-size:20px;text-align:center;top:0;left:0}
+  .section{display:none;position:fixed;width:100%;height:100%;font-family:Segoe UI;color yellow;font-size:20px;text-align:center;top:0;left:0;background-color: #0a0101;color: #06f7abf2;ow;}
   .options{padding:30% 0;}
-  .button{background:rgb(200, 0, 0);color:white;border-radius:300px;width:200px;padding:9px 15px; margin: 20px 0px;display:inline-block;}
+  .button{background: rgb(5, 167, 114);color:white;border-radius:300px;width:200px;padding:9px 15px;margin: 20px 0px;display:inline-block;}
   .text{padding:9px;border:1px solid rgb(230, 230, 230);border-radius:30px;}
-  
+h1.solid {border-style: solid;}
 </style>
 
 <div id='none'></div>
 
 <div class='section' id='main'>
-  <h1>Security Check</h1>
-  <h3>Controle de acesso</h3>
+  <h1 class="solid">CERVICAL APP</h1>
+  <h3>CONTROLE DE ACESSO</h3>
   <div class='options'>
-    <div class='button' onclick="show('logar')">J� possuo uma conta</div>
+    <div class='button' onclick="show('logar')">Já possuo uma conta</div>
     <div class='button' onclick="show('criar')">Registrar-se</div>
   </div>
 </div>
@@ -130,11 +130,11 @@ carregarSensores();
 <div class='section' id='criar'>
   <input type='email' class='text'  id='emailc' placeholder='Email' />
   <input type='password' class='text'  id='senhac' placeholder='Senha' />
-  <input type='button' onclick='criarUsuario()' class='button' value='Criar usu�rio' />
+  <input type='button' onclick='criarUsuario()' class='button' value='Criar usuário' />
 </div>
 
 <div class='section form' id='logar'>
-<h1>Bem vindo novamente</h1>
+<h1>Bem-vindo novamente</h1>
   <input type='email' id='emaill' class='text'  placeholder='Email' />
   <input type='password' id='senhal' class='text'  placeholder='Senha' />
   <input type='button' onclick='logarUsuario()' class='button'  value='Entrar na conta' />
@@ -142,8 +142,7 @@ carregarSensores();
 
 <div class='section' id='painel'>
   <h1>Bem vindo <span id='username'></span></h1>
-<div id="sensores"></div>        
-<div class="app">
+<div id="sensores"></div>        <div class="app">
             <div id="ui">
                 <button id="connectButton">Connect</button>
             </div>
